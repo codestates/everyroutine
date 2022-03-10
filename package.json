@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@ramonak/react-progress-bar": "^4.4.0",
-    "react-router-dom": "^6.2.2"
+    "express-http-proxy": "^1.6.3"
   }
 }

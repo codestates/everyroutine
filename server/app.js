@@ -5,6 +5,7 @@ const userRouter = require("./app/routes/users");
 const personalRoutineRouter = require("./app/routes/personal_routines");
 const groupRoutineRouter = require("./app/routes/group_routines");
 const cors = require("cors");
+var proxy = require("express-http-proxy");
 
 app.set("port", process.env.PORT || 4000);
 
@@ -38,6 +39,8 @@ app.use("/user-routine", personalRoutineRouter);
 app.use("/group-routine", groupRoutineRouter);
 // app.use("/users", router);
 // app.use("/user-routine", router);
+
+app.use("/", proxy(STATIC_WEBSITE_URL));
 
 app.listen(app.get("port"), () => {
   console.log(app.get("port"), "port opened.");
