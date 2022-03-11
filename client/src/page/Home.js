@@ -5,6 +5,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import EveryRoutineInfo from "../components/EveryRoutineInfo";
 import TopBtn from "../components/TopButton";
 import Proverbs from "../etc/Proverbs";
+import backImg from "../assets/main.png";
 
 const HomeBody = styled.div`
   display: flex;
@@ -33,7 +34,7 @@ const HomeButton = styled.button`
   align-items: center;
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px 0;
   transition: 0.5s ease-in;
 
@@ -101,15 +102,15 @@ const RoutineEditWrap = styled.div`
 `;
 
 const Background = styled.div`
-  /* background-image: url();
-  background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-image: url(${backImg});
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   height: 40em;
-  margin-top: 3em;
+  margin-top: -80px;
 `;
 
 const ColorChange = keyframes`
@@ -136,10 +137,11 @@ const ColorChange = keyframes`
 const Color = styled.h1`
   width: 100%;
   display: flex;
-  margin-top: 1em;
-  font-size: 6em;
+  margin-top: 0.8em;
+  font-size: 2.5em;
   justify-content: center;
-  animation: ${ColorChange} 5s linear infinite;
+  color: white;
+  /* animation: ${ColorChange} 5s linear infinite; */
 `;
 
 function Home({ settingModalIsOpen, isLogin }) {
