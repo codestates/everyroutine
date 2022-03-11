@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const ProverbsDiv = styled.h2`
   font-style: oblique;
-  color: #697f6e;
-  padding: 1em;
-  font-size: 2em;
-  margin: 3em 0;
+  color: white;
+  padding: 0.5em;
+  font-size: 1.3em;
+  margin: 0.5em 0;
 `;
 
 export default function Proverbs() {
