@@ -123,7 +123,7 @@ const isMatch = (pass1, pass2) => {
   return pass1 === pass2;
 };
 
-const serverURL = "http://localhost:4000/users";
+const serverURL = "/users";
 
 export default function ModalSignup({ settingLogin, settingSignModalIsClose }) {
   const [userEmail, setUserEmail] = useState("");

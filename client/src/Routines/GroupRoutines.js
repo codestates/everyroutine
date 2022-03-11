@@ -31,7 +31,7 @@ const date = new Date();
 const today = date.getDate();
 const todayMonth = date.getMonth() + 1;
 
-const serverURL = "http://localhost:4000/group-routine";
+const serverURL = "/group-routine";
 
 const dummyData = [
   {

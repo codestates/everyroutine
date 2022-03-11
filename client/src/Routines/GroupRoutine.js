@@ -146,7 +146,7 @@ const dummyData = [
   },
 ];
 
-const serverURL = "http://localhost:4000/group-routine";
+const serverURL = "/group-routine";
 const todayDate = Date.now();
 
 function GroupRoutine({ settingLogin }) {

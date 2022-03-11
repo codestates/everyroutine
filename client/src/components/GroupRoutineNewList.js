@@ -105,7 +105,7 @@ AOS.init({
   duration: 1200,
 });
 
-const serverURL = "http://localhost:4000/group-routine";
+const serverURL = "/group-routine";
 
 const dummyData = [
   {
