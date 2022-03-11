@@ -246,6 +246,7 @@ module.exports = {
 
       // xxxx-xx-xx 형식의 선택된 데이터 (년-월-일)
       const selectedDate = `${year()}-${month()}-${day()}`;
+      console.log('selectedDate ===========================', selectedDate)
 
       // 해당 날짜의 댓글 가져오기
       const selectedComment = await comment.findAll({
@@ -392,13 +393,12 @@ module.exports = {
         });
 
         // 선택된 그룹 루틴 가입자 찾기 -> 인원수 확인용
-        console.log("selectedGroupRoutineData", selectedGroupRoutineData);
-        const joinedMember = await group_user.findAll({
-          raw: true,
-          where: {
-            group_routine_id: groupRoutineID,
-          },
-        });
+        const joinedMember = await group_user.findAll({ 
+          raw: true, 
+          where: { 
+            group_routine_id: groupRoutineID 
+          }
+        })
 
         // 선택된 달
         const year = () => new Date(date).getFullYear();
@@ -494,13 +494,13 @@ module.exports = {
         } else {
           // 가입안된 그룹 루틴 선택 : 콘텐츠, 날짜선택, 댓글, 루틴달성률, 그룹가입하기 버튼, 전체 멤버수
           // TODO: 전체 멤버수, 해당 날 달성률, 댓글작성자 이름 (comments : [{writer: overflowbin, commemt: '안녕하세요~~'}])
-          return res.status(200).json({
-            data: selectedGroupRoutineData,
-            registed: false,
-            members: joinedMember.length,
-            goal: goal,
-            message: "가입안한 그룹 루틴 데이터",
-          });
+          return res.status(200).json({ 
+            data: selectedGroupRoutineData, 
+            registed : false,
+            members : joinedMember.length,
+            goal : goal,
+            message: "가입안한 그룹 루틴 데이터"})
+
         }
       } catch {
         return res.status(400).json({ message: "Bad request" });
