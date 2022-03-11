@@ -67,7 +67,7 @@ const dummyDates = [
   { month: 3, date: 11, yo_il: "금" },
 ];
 
-const serverURL = "http://localhost:4000/user-routine";
+const serverURL = "/user-routine";
 
 AOS.init({
   duration: 1200,

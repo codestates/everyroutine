@@ -94,7 +94,7 @@ const StyledCheckbox = styled.input`
   margin-bottom: 1em;
 `;
 
-const serverURL = "http://localhost:4000/group-routine";
+const serverURL = "/group-routine";
 
 export default function ModalGroupRoutine({
   closeGroupRoutineModal,

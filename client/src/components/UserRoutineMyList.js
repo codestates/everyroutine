@@ -52,7 +52,7 @@ const RoutineCheck = styled.input`
   background-color: #eee;
 `;
 
-const serverURL = "http://localhost:4000/user-routine";
+const serverURL = "/user-routine";
 
 const dummyData = {
   checked: [0, 0, 0],

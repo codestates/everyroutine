@@ -78,7 +78,7 @@ const ButtonCon = styled.div`
 const date = new Date();
 const today = date.getDate();
 
-const serverURL = "http://localhost:4000/user-routine";
+const serverURL = "/user-routine";
 
 export default function ModalUserRoutine({
   closeUserRoutineModal,

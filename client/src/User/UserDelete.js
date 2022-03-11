@@ -74,7 +74,7 @@ const DeleteBtn = styled.button`
   }
 `;
 
-const serverURL = "http://localhost:4000/users";
+const serverURL = "/users";
 
 function UserDelete({ settingLogout }) {
   const [email, setEmail] = useState("");

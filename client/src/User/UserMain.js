@@ -70,7 +70,7 @@ const Input = styled.input`
   margin-left: 1em;
 `;
 
-const serverURL = "http://localhost:4000/users";
+const serverURL = "/users";
 
 function UserMain() {
   const [image, setImage] = useState(logo);
