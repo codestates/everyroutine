@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/74189121/156120918-087dddd0-39a2-40aa-9049-c61698c816a1.png">
 
-## [모두의루틴 바로가기](https://github.com/codestates/everyroutine)
+## [모두의루틴 바로가기](everyroutine.com)
 
 <br/>
 
