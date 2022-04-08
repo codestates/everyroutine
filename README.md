@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/74189121/156120918-087dddd0-39a2-40aa-9049-c61698c816a1.png">
 
-## [모두의루틴 바로가기](https://github.com/codestates/everyroutine)
+## [모두의루틴 바로가기](everyroutine.com)
 
 <br/>
 
@@ -40,7 +40,7 @@
 
 <img src="https://img.shields.io/badge/Nodemon-76D04B?style=for-the-badge&logo=Nodemon&logoColor=white">
 
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-4DB33D?style=for-the-badge&logo=MySQL&logoColor=white">
 
 <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=Express&logoColor=white">
 
